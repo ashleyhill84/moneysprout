@@ -8,67 +8,81 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #f5f5dc;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      min-height: 100vh;
       text-align: center;
-      color: #2e7d32;
+    }
+    header {
+      padding: 40px 20px 20px 20px;
+      display: flex;
+      justify-content: center;
     }
     .logo {
-      max-width: 180px;
+      max-width: 600px;
+      height: auto;
+    }
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .illustration {
+      max-width: 300px;
+      height: auto;
+    }
+    .form-container {
+      max-width: 350px;
+      text-align: left;
+    }
+    .form-container p {
+      font-size: 1.1em;
       margin-bottom: 20px;
+      color: #333;
     }
-    h1 {
-      font-size: 2.5em;
-      margin: 0;
+    .form-container form {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
     }
-    p {
-      font-size: 1.25em;
-      margin: 10px 0 40px 0;
-      color: #555;
-    }
-    .notify {
-      background-color: #ffffff;
-      padding: 15px 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    input[type="email"] {
-      padding: 10px;
-      width: 250px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
+    .form-container input[type="email"] {
+      flex: 1;
+      padding: 12px;
       font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 6px;
     }
-    button {
-      padding: 10px 20px;
-      margin-left: 10px;
-      border: none;
-      border-radius: 5px;
+    .form-container button {
+      padding: 12px 20px;
+      font-size: 1em;
       background-color: #2e7d32;
       color: white;
-      font-size: 1em;
+      border: none;
+      border-radius: 6px;
       cursor: pointer;
+      white-space: nowrap;
     }
-    button:hover {
-      background-color: #27682c;
+    .form-container button:hover {
+      background-color: #256c2a;
     }
   </style>
 </head>
 <body>
-  <img src="/logo.png" alt="MoneySprout Logo" class="logo">
-  <h1>MoneySprout</h1>
-  <p>Growing tomorrow's investors, today.</p>
-  <div class="notify">
-    <p>Our site is taking root. Be the first to know when we launch!</p>
-    <form action="#" method="POST">
-      <input type="email" placeholder="Your email address" required>
-      <button type="submit">Notify Me</button>
-    </form>
+  <header>
+    <img src="Logo.png" alt="MoneySprout Logo" class="logo">
+  </header>
+  <div class="content">
+    <img src="plant-growing-coins.png" alt="Growing Plant with Coins" class="illustration">
+    <div class="form-container">
+      <p>Our site is taking root. Be the first to know when we launch!</p>
+      <form action="#" method="POST">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Notify Me</button>
+      </form>
+    </div>
   </div>
 </body>
 </html>
