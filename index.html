@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoneySprout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5dc;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      color: #2e7d32;
+    }
+    .logo {
+      max-width: 180px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    p {
+      font-size: 1.25em;
+      margin: 10px 0 40px 0;
+      color: #555;
+    }
+    .notify {
+      background-color: #ffffff;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    input[type="email"] {
+      padding: 10px;
+      width: 250px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+    button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #2e7d32;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #27682c;
+    }
+  </style>
+</head>
+<body>
+  <img src="/logo.png" alt="MoneySprout Logo" class="logo">
+  <h1>MoneySprout</h1>
+  <p>Growing tomorrow's investors, today.</p>
+  <div class="notify">
+    <p>Our site is taking root. Be the first to know when we launch!</p>
+    <form action="#" method="POST">
+      <input type="email" placeholder="Your email address" required>
+      <button type="submit">Notify Me</button>
+    </form>
+  </div>
+</body>
+</html>
